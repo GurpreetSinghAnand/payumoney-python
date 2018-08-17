@@ -1,2 +1,15 @@
 sudo: false
+
 language: python
+
+matrix:
+  include:
+    - python: "2.7"
+    - python: "3.4"
+    - python: "3.5"
+    - python: "3.6"
+    - python: "3.7"
+      dist: xenial
+      sudo: true
+    - python: "pypy"
+    - python: "pypy3"
